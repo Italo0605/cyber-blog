@@ -1,2 +1,2 @@
-# cyber-blog
+# Cyber-Blog
 Projeto de estudo de php mvc
