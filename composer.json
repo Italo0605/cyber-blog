@@ -1,0 +1,21 @@
+{
+    "name": "italo/cyber-blog",
+    "description": "projeto de blog desenvolvido em uma série do SatelaSoft",
+
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        },
+        "files": [
+            "app/config/config.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Ítalo"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.4"
+    }
+}
