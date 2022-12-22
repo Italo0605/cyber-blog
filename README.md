@@ -20,3 +20,13 @@ aquivo final de configuração para ambiente local, qa e produção.
 Faz uma validação através de uma variavel para verificar qual aquivo será utilizado.
 
 Mude o valor da variavel **$prod** para true se quiser carregar o aquivo de configuração de prod, mas caso queira usar o aquivo de configurações locais, basta manter os valores da variaveis para false
+
+# Renderizando página com o Twig
+
+Para renderizar uma página com o twig basta extender a classe
+**app\core\Controller.php** e chamar o método view.
+
+O método recebe dois parâmetros, sendo eles:
+
+* $page - Página a ser carregada, não informe .twig.php pois já é inserido asutomaticamente. Não utilizar **/** para diretório, mas sim **.** , ex: **diretório**;
+*$params - Array associativo para ser entregue à página do twig.
