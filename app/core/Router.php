@@ -19,9 +19,6 @@ class Router{
         //Método padrão exemplo: index()
         $this->method      = 'index';
 
-        //Parâmetros padrão, ex []
-        $this->params      = [];
-
         //chama o método para formatar as propriedades
         $this->format();
 
