@@ -10,7 +10,7 @@ Para a utilização desse projeto se faz necessario algumas tecnologias, dentre 
 
 O projeto está em desenvolvimento e qualquer alteração pode acarretar em erros, aguarde a versão final.
 
-#Configuração
+# Configuração
 
 O arquivo de configuração fica na pasta **app\config**, contendo o aquivo **config.php** e uma subpasta chamada de **env** contendo o 
 aquivo final de configuração para ambiente local, qa e produção.
