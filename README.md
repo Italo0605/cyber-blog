@@ -30,3 +30,19 @@ O método recebe dois parâmetros, sendo eles:
 
 * $page - Página a ser carregada, não informe .twig.php pois já é inserido asutomaticamente. Não utilizar **/** para diretório, mas sim **.** , ex: **diretório**;
 *$params - Array associativo para ser entregue à página do twig.
+
+# View Partials
+Dentro da pasta partials/,contém vários arquivos de visão especiais, sendo eles:
+
+* **body** - Arquivo contendo o corpo genérico das páginas, com as tags de script, body, head...;
+* **header** - Contém todo HTML do cabeçalho que é importado no arquivo body;
+* **footer** - Contém todo HTMK do rodapé que é importado no arquivo body;
+* **components/post-square** - Contém o HTML para exibir postagem com uma imagem de título.
+
+
+Para inserir scripts antes do fechamento ```</body>```, utilize o bloco descrito abaixo.
+
+    {% block footer %}{%endblock%}
+Para inserir scripts antes do fechamento > ```</head>```, utilize o bloco descrito abaixo.
+
+    {% block header %}{%endblock%}

@@ -34,7 +34,8 @@ class Router{
 
     private function format() 
     {
-        $uri = $_SERVER['REQUEST_URI'];        
+        $uri = $_SERVER['REQUEST_URI'];
+        
         if (strpos($uri, '?') > 0)
             $uri = substr($uri, 0, strpos($uri, '?'));
 
