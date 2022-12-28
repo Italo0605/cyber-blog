@@ -1,6 +1,6 @@
 :root{
     /* Cores */
-    --cor-primaria: #1bbbe3;
+    --cor-primaria: #0ba4ca;
     --cor-vermelha : #ef3e39;
     --cor-cinza-claro:#eee;
     --cinza-escuro: #3d3d3d;
@@ -72,6 +72,7 @@ footer{
     padding: 10px;
     color: var(--cor-branca);
     border-top: 5px solid var(--cor-primaria);
+    margin-top: 30px;
 }
 
 footer a{
@@ -104,4 +105,35 @@ footer a:hover{
 }
 .component-square-post .title:hover{
     color: var(--cor-vermelha);
+}
+
+/*Componente utilizado na pagina de busca*/
+.component-post-search:last-child{
+    border: none;
+}
+.component-post-search{
+    text-align: left;
+    padding-bottom: 10px;
+    margin-top:  15px;
+    border-bottom: 1px solid #ccc;
+}
+.component-post-search img{
+    border: none;
+    opacity: .8;
+    width: 100%;
+}
+.component-post-search img:hover{
+    opacity: 1;
+}
+.component-post-search h1{
+    font-size: 2em;
+}
+
+.component-post-search h2{
+    font-weight: normal;
+    font-size: 1.5em;
+}
+.component-post-search a{
+    font-weight: bold;
+    color: var(--cor-primaria);
 }

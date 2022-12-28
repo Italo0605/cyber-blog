@@ -21,6 +21,7 @@ class Controller{
         $loader = new \Twig\Loader\FilesystemLoader('../app/site/view');
 
         $twig = new \Twig\Environment($loader);
+        $twig->addGlobal('BASE', BASE);
 
         echo $twig->render($page, $params);
     }

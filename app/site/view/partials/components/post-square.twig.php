@@ -1,6 +1,11 @@
 <div class ="component-square-post">
     <a href="{{BASE}}post/ver/{{post.link}}">
-        <img src="{{post.image ?? BASE ~ 'assets/image/blog-thumb/default-thumb.jpg' }}" alt="{{post.title}}">
+        {%if post.image !=null %}
+        <img src="{{post.image}}" alt="{{post.title}}">
+        {% else %}
+        <img src="{{ BASE ~ 'assets/image/blog-thumb/default-thumb.jpg' }}" alt="{{post.title}}">
+        {% endif %}
     </a>
+
     <a href="{{BASE}}post/ver/{{post.link}}" class="title">{{post.title}}</a>
 </div>
